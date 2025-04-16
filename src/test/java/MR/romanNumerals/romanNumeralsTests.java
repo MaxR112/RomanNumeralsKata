@@ -60,4 +60,8 @@ class romanNumeralsTests {
         assertEquals("CDV", r.convert(405));
     }
 
+    @Test
+    public void testConvert1590(){
+        assertEquals("MDXC", r.convert(1590));
+    }
 }
