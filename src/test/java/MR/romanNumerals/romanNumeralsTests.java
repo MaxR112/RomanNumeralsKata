@@ -50,4 +50,9 @@ class romanNumeralsTests {
         assertEquals("XXIV", r.convert(24));
     }
 
+    @Test
+    public void testConvert199(){
+        assertEquals("CXCIX", r.convert(199));
+    }
+
 }
