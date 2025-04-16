@@ -55,4 +55,9 @@ class romanNumeralsTests {
         assertEquals("CXCIX", r.convert(199));
     }
 
+    @Test
+    public void testConvert405(){
+        assertEquals("CDV", r.convert(405));
+    }
+
 }
