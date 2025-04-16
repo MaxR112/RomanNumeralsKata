@@ -29,8 +29,8 @@ class romanNumeralsTests {
         assertEquals("II", r.convert(2));
     }
 
-    // @Test
-    // public void testConvert3(){
-    //     assertEquals("III", r.convert(3));
-    // }
+    @Test
+    public void testConvert3(){
+        assertEquals("III", r.convert(3));
+    }
 }
