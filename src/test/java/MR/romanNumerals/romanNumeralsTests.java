@@ -69,4 +69,10 @@ class romanNumeralsTests {
     public void testConvert978(){
         assertEquals("CMLXXVIII", r.convert(978));
     }
+
+    @Test 
+    public void testConvert49(){
+        assertEquals("XLIX", r.convert(49));
+    }
+
 }
