@@ -7,6 +7,10 @@ public class romanNumerals {
         if (value < 0){
             throw new NegativeIntegerException();
         }else{
+            while (value >= 10){
+                value -= 10;
+                romanValue += "X";
+            }
             while (value >= 1){
                 value -= 1;
                 romanValue += "I";
