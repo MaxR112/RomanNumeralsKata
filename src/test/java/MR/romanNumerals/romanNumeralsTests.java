@@ -40,4 +40,9 @@ class romanNumeralsTests {
         assertEquals("III", r.convert(3));
     }
 
+    @Test
+    public void testConvert10(){
+        assertEquals("X", r.convert(10));
+    }
+
 }
