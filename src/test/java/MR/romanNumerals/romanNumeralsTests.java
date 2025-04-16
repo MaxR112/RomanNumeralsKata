@@ -64,4 +64,9 @@ class romanNumeralsTests {
     public void testConvert1590(){
         assertEquals("MDXC", r.convert(1590));
     }
+
+    @Test
+    public void testConvert978(){
+        assertEquals("CMLXXVIII", r.convert(978));
+    }
 }
