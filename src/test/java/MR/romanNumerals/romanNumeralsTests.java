@@ -19,6 +19,12 @@ class romanNumeralsTests {
         r = new romanNumerals();
     }
 
+    @Test
+    public void negativeIntegerIsAnError(){
+        assertThrows(RomanNumerals.NegativeIntegerException, 
+                        () -> {r.convert(-1);});
+    }
+
 	@Test 
     public void testConvert1(){
         assertEquals("I", r.convert(1));
@@ -33,4 +39,5 @@ class romanNumeralsTests {
     public void testConvert3(){
         assertEquals("III", r.convert(3));
     }
+
 }
