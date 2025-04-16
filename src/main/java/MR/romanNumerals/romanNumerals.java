@@ -3,8 +3,8 @@ package MR.romanNumerals;
 public class romanNumerals {
     public String convert(int numericValue){
         String romanValue = "";
-        int[] numericList = {100, 90, 10, 9, 4, 1};
-        String[] romanList = {"C", "XC", "X", "IX", "IV", "I"};
+        int[] numericList = {400, 100, 90, 10, 9, 5, 4, 1};
+        String[] romanList = {"CD", "C", "XC", "X", "IX", "V", "IV", "I"};
 
         if (numericValue < 0){
             throw new NegativeIntegerException();
