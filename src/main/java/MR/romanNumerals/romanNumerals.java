@@ -2,6 +2,10 @@ package MR.romanNumerals;
 
 public class romanNumerals {
     public String convert(int value){
-        return "I";
+        if (value == 1){
+            return "I";
+        }else{
+            return "II";
+        }
     }
 }
