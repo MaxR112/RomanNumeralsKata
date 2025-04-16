@@ -4,11 +4,17 @@ public class romanNumerals {
     public String convert(int value){
         String romanValue = "";
 
-        while (value >= 1){
-            value -= 1;
-            romanValue += "I";
+        if (value < 0){
+            throw new NegativeIntegerException();
+        }else{
+            while (value >= 1){
+                value -= 1;
+                romanValue += "I";
+            }
         }
 
         return romanValue;
     }
+
+    class NegativeIntegerException extends RuntimeException{}
 }

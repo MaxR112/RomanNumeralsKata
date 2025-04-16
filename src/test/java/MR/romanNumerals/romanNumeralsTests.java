@@ -21,7 +21,7 @@ class romanNumeralsTests {
 
     @Test
     public void negativeIntegerIsAnError(){
-        assertThrows(RomanNumerals.NegativeIntegerException, 
+        assertThrows(romanNumerals.NegativeIntegerException.class, 
                         () -> {r.convert(-1);});
     }
 
