@@ -25,6 +25,11 @@ class romanNumeralsTests {
                         () -> {r.convert(-1);});
     }
 
+    @Test
+    public void testConver0(){
+        assertEquals("", r.convert(0));
+    }
+
 	@Test 
     public void testConvert1(){
         assertEquals("I", r.convert(1));
